@@ -1,0 +1,7 @@
+PropertyName,PriceDetails
+Smartworld One DXP,"{'2 BHK': {'building_type': 'Apartment', 'area_type': 'Carpet Area', 'area': '1,370 sq.ft.', 'price-range': '₹ 2 - 2.4 Cr'}, '3 BHK': {'building_type': 'Apartment', 'area_type': 'Carpet Area', 'area': '1,850 - 2,050 sq.ft.', 'price-range': '₹ 2.25 - 3.59 Cr'}, '4 BHK': {'building_type': 'Apartment', 'area_type': 'Carpet Area', 'area': '2,600 sq.ft.', 'price-range': '₹ 3.24 - 4.56 Cr'}}"
+M3M Crown,"{'3 BHK': {'building_type': 'Apartment', 'area_type': 'Super Area', 'area': '2,000 sq.ft.', 'price-range': '₹ 3 - 4 Cr'}}"
+Adani Brahma Samsara Vilasa,"{'3 BHK': {'building_type': 'Independent Floor', 'area_type': 'Built-up Area', 'area': '1,800 sq.ft.', 'price-range': '₹ 2.5 - 3.2 Cr'}}"
+Sobha City,"{'2 BHK': {'building_type': 'Apartment', 'area_type': 'Carpet Area', 'area': '1,200 sq.ft.', 'price-range': '₹ 1.8 - 2.2 Cr'}, '3 BHK': {'building_type': 'Apartment', 'area_type': 'Carpet Area', 'area': '1,600 sq.ft.', 'price-range': '₹ 2.5 - 3 Cr'}}"
+Signature Global City 93,"{'2 BHK': {'building_type': 'Independent Floor', 'area_type': 'Super Area', 'area': '1,100 sq.ft.', 'price-range': '₹ 1.5 - 1.8 Cr'}}"
+Premium Land Plot,"{'Land': {'building_type': '', 'area_type': 'Plot Area', 'area': '2,160 - 3,240 sq.ft.', 'price-range': '₹ 4.2 - 6.3 Cr'}}"

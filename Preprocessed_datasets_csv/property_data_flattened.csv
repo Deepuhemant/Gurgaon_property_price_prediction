@@ -1,0 +1,7 @@
+PropertyName,2_bhk_building_type,2_bhk_area_type,2_bhk_area,2_bhk_area_min,2_bhk_area_max,2_bhk_price_range_min,2_bhk_price_range_max,3_bhk_building_type,3_bhk_area_type,3_bhk_area,3_bhk_area_min,3_bhk_area_max,3_bhk_price_range_min,3_bhk_price_range_max,4_bhk_building_type,4_bhk_area_type,4_bhk_area,4_bhk_area_min,4_bhk_area_max,4_bhk_price_range_min,4_bhk_price_range_max,land_building_type,land_area_type,land_area,land_area_min,land_area_max,land_price_range_min,land_price_range_max
+Smartworld One DXP,Apartment,Carpet Area,1370.0,1370.0,1370.0,2.0,2.4,Apartment,Carpet Area,1950.0,1850.0,2050.0,2.25,3.59,Apartment,Carpet Area,2600.0,2600.0,2600.0,3.24,4.56,,,,,,,
+M3M Crown,,,,,,,,Apartment,Super Area,2000.0,2000.0,2000.0,3.0,4.0,,,,,,,,,,,,,,
+Adani Brahma Samsara Vilasa,,,,,,,,Independent Floor,Built-up Area,1800.0,1800.0,1800.0,2.5,3.2,,,,,,,,,,,,,,
+Sobha City,Apartment,Carpet Area,1200.0,1200.0,1200.0,1.8,2.2,Apartment,Carpet Area,1600.0,1600.0,1600.0,2.5,3.0,,,,,,,,,,,,,,
+Signature Global City 93,Independent Floor,Super Area,1100.0,1100.0,1100.0,1.5,1.8,,,,,,,,,,,,,,,,,,,,,
+Premium Land Plot,,,,,,,,,,,,,,,,,,,,,,,Plot Area,2700.0,2160.0,3240.0,4.2,6.3
