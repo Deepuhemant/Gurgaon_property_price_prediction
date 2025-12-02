@@ -1,391 +1,132 @@
-# 🏘️ Gurgaon Property Price Prediction
+# \ud83c\udfnf Gurgaon Property Price Prediction
 
-<div align="center">
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/framework-Streamlit-FF4B4B.svg)](https://streamlit.io/)
+[![Scikit-learn](https://img.shields.io/badge/ML-scikit--learn-F7931E.svg)](https://scikit-learn.org/)
+[![AWS](https://img.shields.io/badge/deployment-AWS-FF9900.svg)](https://aws.amazon.com/)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
+[![Status](https://img.shields.io/badge/status-deployed-brightgreen.svg)]()
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.0+-red)
-![Machine Learning](https://img.shields.io/badge/ML-Scikit--learn-orange)
-![Status](https://img.shields.io/badge/Status-Deployed-success)
-![License](https://img.shields.io/badge/License-GPL--3.0-yellow)
+A comprehensive ML project for predicting property prices in Gurgaon. Features data analysis, trained ML models, and a production Streamlit web app deployed on AWS.
 
-**A comprehensive machine learning project for predicting property prices in Gurgaon based on location, area, amenities, and other features.**
+## \ud83c\udf3f Overview
 
-[Live Demo](#deployment) • [Documentation](#documentation) • [Features](#features)
+End-to-end solution combining:
+- Comprehensive data analysis with Jupyter notebooks
+- Multiple ML models for price prediction
+- Interactive multi-page Streamlit web application
+- Production deployment on AWS EC2
 
-</div>
+**Key Highlights:**
+- \u2705 Data preprocessing pipeline
+- \u2705 ML model experimentation (Linear, Ridge, Lasso, Random Forest, XGBoost)
+- \u2705 Multi-page Streamlit web app
+- \u2705 AWS deployment
+- \u2705 Model serialization with pickle
+- \u2705 R\u00b2 Score 0.85+
 
----
+## \u2728 Features
 
-## 📋 Table of Contents
+**Data Analysis:**
+- Comprehensive EDA
+- Feature engineering
+- Model experimentation
+- Performance tracking
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Tech Stack](#-tech-stack)
-- [Installation](#-installation)
-- [Usage](#-usage)
-  - [Data Analysis & Model Development](#data-analysis--model-development)
-  - [Web Application](#web-application)
-- [Model Details](#-model-details)
-- [Deployment](#-deployment)
-- [Dataset](#-dataset)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
-## 🎯 Overview
-
-This project provides an end-to-end solution for predicting property prices in Gurgaon. It includes:
-
-- **Data Analysis & Exploration**: Jupyter notebooks for EDA and model development
-- **Machine Learning Models**: Trained models for price prediction
-- **Interactive Web App**: Streamlit application deployed on AWS
-- **Comprehensive Dataset**: Property data with location, area, age, and luxury amenities
-
-**Key Prediction Features:**
-- Location (sector/area in Gurgaon)
-- Square foot area
-- Age of the property
-- Number of bedrooms & bathrooms
-- Luxury amenities (swimming pool, garden, golf course, etc.)
-- Property type (house/flat/apartment)
-
----
-
-## ✨ Features
-
-### 📊 Data Analysis & Research
-- Comprehensive exploratory data analysis (EDA)
-- Data preprocessing and feature engineering
-- Multiple ML model experimentation
-- Model evaluation and comparison
-- Jupyter notebooks for reproducible research
-
-### 🤖 Machine Learning
-- Regression models for price prediction
-- Feature importance analysis
+**Machine Learning:**
+- Regression models
+- Feature importance
 - Hyperparameter tuning
-- Model serialization (pickle files)
-- Performance metrics tracking
+- Model serialization
 
-### 💻 Web Application
-- **Multi-page Streamlit app**
-- Real-time price predictions
-- Interactive UI with input validation
-- Property price visualization
-- Deployed on AWS for public access
+**Web Application:**
+- Multi-page Streamlit app
+- Real-time predictions
+- Interactive UI
+- Analytics dashboard
+- AWS deployment
 
----
-
-## 📁 Project Structure
-
-```
-Gurgaon_property_price_prediction/
-│
-├── notebooks/                    # Jupyter notebooks for analysis
-│   ├── EDA.ipynb                 # Exploratory Data Analysis
-│   ├── feature_engineering.ipynb # Feature creation & selection
-│   ├── model_training.ipynb      # Model development
-│   └── model_evaluation.ipynb    # Model performance analysis
-│
-├── datasets/                     # Data files
-│   ├── raw/                      # Original datasets
-│   ├── processed/                # Cleaned datasets
-│   └── README.md                 # Dataset documentation
-│
-├── models/                       # Trained models
-│   ├── *.pkl                     # Pickle files for models
-│   └── model_metadata.json       # Model information
-│
-├── app/                          # Streamlit deployment
-│   ├── pages/                    # Multi-page app
-│   │   ├── 1_🏠_Price_Predictor.py
-│   │   ├── 2_📊_Analytics.py
-│   │   └── 3_📊_About.py
-│   ├── Home.py                   # Main app page
-│   ├── requirements.txt          # App dependencies
-│   └── config.py                 # App configuration
-│
-├── src/                          # Source code
-│   ├── preprocessing.py          # Data preprocessing
-│   ├── feature_engineering.py    # Feature creation
-│   ├── model_training.py         # Training pipeline
-│   └── prediction.py             # Prediction utilities
-│
-├── tests/                        # Unit tests
-│   ├── test_preprocessing.py
-│   └── test_model.py
-│
-├── README.md                     # This file
-├── requirements.txt              # Project dependencies
-├── setup.py                      # Package setup
-├── LICENSE                       # GPL-3.0 license
-└── .gitignore                    # Git ignore file
-```
-
----
-
-## 🛠 Tech Stack
+## \ud83d\udd27 Tech Stack
 
 | Category | Technologies |
-|----------|-------------|
-| **Language** | Python 3.8+ |
-| **ML/Data Science** | scikit-learn, pandas, numpy |
-| **Visualization** | matplotlib, seaborn, plotly |
-| **Web Framework** | Streamlit |
-| **Deployment** | AWS (EC2/Elastic Beanstalk) |
-| **Development** | Jupyter Notebook, VS Code |
-| **Version Control** | Git, GitHub |
-| **Model Serialization** | Pickle, joblib |
+|----------|---------------|
+| Language | Python 3.8+ |
+| ML/Data | scikit-learn, pandas, numpy |
+| Visualization | matplotlib, seaborn, plotly |
+| Web | Streamlit |
+| Deployment | AWS EC2 |
+| Serialization | Pickle, joblib |
 
----
+## \ud83d\ude80 Quick Start
 
-## 🚀 Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-- Git
-- Virtual environment (recommended)
-
-### Setup Steps
-
-1. **Clone the repository**
+**Clone & Setup:**
 ```bash
 git clone https://github.com/Deepuhemant/Gurgaon_property_price_prediction.git
 cd Gurgaon_property_price_prediction
-```
-
-2. **Create virtual environment**
-```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
-```bash
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. **Install the package** (for development)
-```bash
-pip install -e .
-```
-
----
-
-## 💻 Usage
-
-### Data Analysis & Model Development
-
-#### 1. Explore the Data
-Open and run the Jupyter notebooks in the `notebooks/` directory:
-
-```bash
-jupyter notebook notebooks/EDA.ipynb
-```
-
-#### 2. Train the Model
-Run the model training notebook or script:
-
-```bash
-jupyter notebook notebooks/model_training.ipynb
-# OR
-python src/model_training.py
-```
-
-#### 3. Evaluate Performance
-Check model metrics and performance:
-
-```bash
-jupyter notebook notebooks/model_evaluation.ipynb
-```
-
-### Web Application
-
-#### Run Locally
-Start the Streamlit app:
-
+**Run Web App:**
 ```bash
 cd app
 streamlit run Home.py
 ```
 
-The app will open in your browser at `http://localhost:8501`
+Access at: `http://localhost:8501`
 
-#### Features of Web App:
-1. **Price Predictor**: Enter property details to get instant price predictions
-2. **Analytics Dashboard**: Visualize property trends and insights
-3. **About Page**: Learn about the model and methodology
+## \ud83e\udd16 Model Details
 
----
-
-## 🤖 Model Details
-
-### Features Used for Prediction
-
-**Numerical Features:**
-- Property area (square feet)
-- Number of bedrooms
-- Number of bathrooms
-- Age of property
-- Floor number
-- Total floors in building
-
-**Categorical Features:**
-- Location/Sector in Gurgaon
-- Property type (apartment/independent house/villa)
-- Facing direction
-- Furnishing status
-
-**Amenity Features (Binary):**
-- Swimming pool
-- Gym
-- Garden
-- Golf course
-- Clubhouse
-- Parking
-- Security
-
-### Model Performance
-
-| Metric | Value |
-|--------|-------|
-| **R² Score** | 0.85+ |
-| **RMSE** | TBD |
-| **MAE** | TBD |
-| **Training Samples** | 10,000+ |
-
-### Algorithms Tested
+**Algorithms:**
 - Linear Regression
 - Ridge Regression
-- Lasso Regression
-- Random Forest Regressor ✅ (Best)
+- Lasso Regression  
+- Random Forest \u2705 (Best)
 - Gradient Boosting
 - XGBoost
 
----
+**Performance:**
+- R\u00b2 Score: 0.85+
+- Training Samples: 10,000+
+- Features: 20+
 
-## 🌐 Deployment
+## \ud83c\udf10 AWS Deployment
 
-### AWS Deployment
-
-The Streamlit app is deployed on AWS and accessible at:
-
-**Live Demo**: [Coming Soon]
-
-### Deployment Steps
-
-1. **AWS EC2 Setup**
 ```bash
-# SSH into EC2 instance
-ssh -i your-key.pem ubuntu@your-ec2-ip
-
-# Clone repository
-git clone https://github.com/Deepuhemant/Gurgaon_property_price_prediction.git
-cd Gurgaon_property_price_prediction/app
-
-# Install dependencies
+ssh -i key.pem ubuntu@ec2-ip
+git clone <repo>
+cd app
 pip install -r requirements.txt
-
-# Run with nohup for persistent deployment
-nohup streamlit run Home.py --server.port 8501 --server.address 0.0.0.0 &
+nohup streamlit run Home.py --server.port 8501 &
 ```
 
-2. **Configure Security Group**
-- Allow inbound traffic on port 8501
-- Configure domain name (optional)
+## \ud83d\udccc Dataset
+
+- Records: 10,000+
+- Features: 20+
+- Source: Real estate websites
+- Preprocessed & ready for ML
+
+## \ud83d\udc4b Contributing
+
+1. Fork repository
+2. Create feature branch
+3. Commit changes
+4. Push & open PR
+
+## \ud83d\udcc4 License
+
+GNU General Public License v3.0
+
+## \ud83d\udce7 Contact
+
+**Author:** Deepuhemant
+
+**Repo:** [Gurgaon_property_price_prediction](https://github.com/Deepuhemant/Gurgaon_property_price_prediction)
 
 ---
 
-## 📊 Dataset
+**\u2b50 Star this project if it helps! \u2b50**
 
-The dataset includes property listings in Gurgaon with the following information:
-
-- **Total Records**: 10,000+
-- **Features**: 20+ columns
-- **Target Variable**: Property price (in lakhs/crores)
-- **Source**: Scraped from real estate websites (anonymized)
-
-### Data Files
-
-- `datasets/raw/`: Original scraped data
-- `datasets/processed/`: Cleaned and preprocessed data
-- `datasets/README.md`: Detailed data documentation
-
-### Data Preprocessing Steps
-
-1. Handling missing values
-2. Outlier detection and treatment
-3. Feature encoding (one-hot, label encoding)
-4. Feature scaling and normalization
-5. Train-test split (80-20)
-
----
-
-## 🔄 Repository Merge
-
-This repository combines two previous repositories:
-
-1. **Gurgaon_property_price_prediction** - Research and notebooks
-2. **Gurgaon_properties_price_predictor** - Streamlit deployment
-
-Merged for better organization and comprehensive documentation.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Follow PEP 8 style guide
-- Add unit tests for new features
-- Update documentation as needed
-- Ensure all tests pass before submitting PR
-
----
-
-## 📝 License
-
-This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📧 Contact
-
-**Author:** Deepuhemant  
-**Repository:** [Gurgaon_property_price_prediction](https://github.com/Deepuhemant/Gurgaon_property_price_prediction)
-
----
-
-## 🚀 Roadmap
-
-- [x] Data collection and preprocessing
-- [x] Exploratory data analysis
-- [x] Model training and evaluation
-- [x] Streamlit app development
-- [x] AWS deployment
-- [ ] Add more advanced models (Neural Networks)
-- [ ] Implement real-time data updates
-- [ ] Add price trend predictions
-- [ ] Mobile app development
-- [ ] API development for third-party integration
-
----
-
-<div align="center">
-
-**⭐ If you find this project helpful, please give it a star! ⭐**
-
-**Made with ❤️ for the Gurgaon real estate community**
-
-</div>
+**Made with \u2764\ufe0f for Gurgaon real estate**
